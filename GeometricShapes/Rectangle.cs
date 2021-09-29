@@ -12,6 +12,11 @@ namespace GeometricShapes
         {
             return LenSide1 * LenSide2;
         }
+        public new void Print()
+        {
+            Console.WriteLine($"Perimeter: {Perimeter()}, Area: {Area()}");
+        }
+
         public Rect(int SideA, int SideB) : base(SideA, SideB, SideA, SideB) { }
 
     }

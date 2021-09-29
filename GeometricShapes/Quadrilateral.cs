@@ -18,12 +18,16 @@ namespace GeometricShapes
         {
             return LenSide1 + LenSide2 + LenSide3 + LenSide4;
         }
-        public Quadrilateral(int SideA, int SideB, int SideC, int SideD) 
+        public void Print()
         {
-            SideA = LenSide1;
-            SideB = LenSide2;
-            SideC = LenSide3;
-            SideD = LenSide4;
+            Console.WriteLine($"Perimeter: {Perimeter()}");
+        }
+        public Quadrilateral(int SideA, int SideB, int SideC, int SideD)
+        {
+            LenSide1 = SideA;
+            LenSide2 = SideB;
+            LenSide3 = SideC;
+            LenSide4 = SideD;
         }
     }
 }
