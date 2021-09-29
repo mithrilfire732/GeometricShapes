@@ -18,5 +18,12 @@ namespace GeometricShapes
         {
             return LenSide1 + LenSide2 + LenSide3 + LenSide4;
         }
+        public Quadrilateral(int SideA, int SideB, int SideC, int SideD) 
+        {
+            SideA = LenSide1;
+            SideB = LenSide2;
+            SideC = LenSide3;
+            SideD = LenSide4;
+        }
     }
 }
